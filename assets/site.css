@@ -137,7 +137,11 @@ footer {
   font-size: 14px;
 }
 
-footer nav a { margin-right: 16px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+
+.texto p, .texto li { max-width: 68ch; }
+.texto ul { padding-left: 22px; margin: 8px 0 12px; }
+.texto li { margin: 4px 0; }
 
 [lang][hidden] { display: none !important; }
 
