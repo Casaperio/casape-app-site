@@ -1,0 +1,146 @@
+/* Casapē Rio — páginas do app. Sem fontes nem scripts de terceiros. */
+:root {
+  --oceano: #063a5e;
+  --caramelo: #b16738;
+  --marfim: #f7f2e6;
+  --carvao: #2d231e;
+  --taupe: #6a584a;
+  --linha: #e4dccb;
+  --fundo: #fbf9f4;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--carvao);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  background: var(--oceano);
+  color: #fff;
+  padding: 20px 20px 18px;
+}
+
+.topo {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.marca {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.marca small {
+  display: block;
+  font: 600 11px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.idiomas { display: flex; gap: 4px; }
+
+.idiomas button {
+  font: 600 13px/1 inherit;
+  font-family: inherit;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.idiomas button[aria-pressed="true"] {
+  background: #fff;
+  color: var(--oceano);
+  border-color: #fff;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  color: var(--oceano);
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+
+h2 {
+  font-size: 19px;
+  color: var(--oceano);
+  margin: 32px 0 8px;
+}
+
+.sub { color: var(--taupe); margin: 0 0 24px; }
+
+a { color: var(--caramelo); }
+
+.cartao {
+  background: #fff;
+  border: 1px solid var(--linha);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 14px 0;
+}
+
+.cartao h2 { margin-top: 0; }
+
+.contato {
+  display: block;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--oceano);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.rotulo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--caramelo);
+  margin: 0 0 4px;
+}
+
+table { border-collapse: collapse; width: 100%; }
+td { padding: 6px 0; border-bottom: 1px solid var(--linha); vertical-align: top; }
+td:last-child { text-align: right; white-space: nowrap; padding-left: 12px; }
+tr:last-child td { border-bottom: 0; }
+
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px 36px;
+  color: var(--taupe);
+  font-size: 14px;
+}
+
+footer nav a { margin-right: 16px; }
+
+[lang][hidden] { display: none !important; }
+
+@media (min-width: 640px) {
+  h1 { font-size: 36px; }
+}
