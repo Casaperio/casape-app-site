@@ -9,6 +9,10 @@ Páginas públicas do app **Casapē Rio**, exigidas pela App Store e pelo Google
 São estes os endereços cadastrados na App Store Connect e na Play Console. Mudar
 um caminho aqui quebra o link nas lojas.
 
+Do sistema da equipe e da portaria (**Casapē Staff**), só em pt:
+
+- `https://casape-app-site.vercel.app/staff/privacidade/` — aviso de privacidade para porteiros e para a equipe Casapē
+
 HTML e CSS estáticos, publicados pela **Vercel** (projeto
 `casaperios-projects/casape-app-site`): cada commit na `main` vai para produção
 sozinho, e cada PR ganha uma prévia. Sem build, sem framework, sem scripts ou
